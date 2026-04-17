@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "LAMF: Liquid Audience Measurement Framework — reference implementation"
+version: 0.1.0
+authors:
+  - family-names: Kasimov
+    given-names: Furkat
+    orcid: "https://orcid.org/0009-0002-0735-4672"
+license: MIT
+repository-code: "https://github.com/YOUR-USERNAME/lamf"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Kasimov
+      given-names: Furkat
+      orcid: "https://orcid.org/0009-0002-0735-4672"
+  title: "Liquid Audiences: Measuring Intent-Based Segmentation in Real Time"
+  year: 2025

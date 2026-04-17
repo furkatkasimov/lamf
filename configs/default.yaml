@@ -1,0 +1,26 @@
+# Default LAMF hyperparameters.
+# These match the values used in the paper for MovieLens, RetailRocket, and REES46.
+# Override per dataset as needed.
+
+# Intent state
+half_life_fast_days: 1.0      # fast/exploration decay half-life
+half_life_slow_days: 7.0      # slow/stable-preference decay half-life
+
+# Policy thresholds
+theta: 0.55                   # activation threshold
+theta_safe: 0.65              # safety threshold (single vs top-k)
+top_k: 10                     # recommendation list size above theta_safe
+
+# Bandit
+bandit_epsilon: 0.05          # exploration cap
+
+# Evaluation
+test_frac: 0.2                # temporal split
+min_test_decisions: 3
+bootstrap_n: 500
+bootstrap_seed: 42
+
+# Dataset-specific overrides (example)
+movielens:
+  half_life_fast_days: 3.0    # slower decay for movies
+  half_life_slow_days: 14.0

@@ -1,0 +1,70 @@
+# ---- Data and results (never commit these) ----
+data/raw/**
+!data/raw/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+results/**
+!results/.gitkeep
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+.installed.cfg
+MANIFEST
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---- Testing / coverage ----
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ---- Virtual environments ----
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---- Generated artefacts ----
+*.log
+*.pid
+*.seed
+*.out
+*.zip
+!examples/*.zip
+
+# ---- Large files that should not be committed ----
+*.csv
+!configs/*.csv
+!tests/fixtures/*.csv
+*.parquet
+*.feather
+*.h5
+*.pkl
+*.pickle
