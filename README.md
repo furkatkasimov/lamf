@@ -82,7 +82,7 @@ results/                    # Benchmark outputs land here
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/lamf.git
+git clone https://github.com/furkatkasimov/lamf.git
 cd lamf
 pip install -r requirements.txt
 pip install -e .
